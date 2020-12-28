@@ -1,0 +1,101 @@
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+}
+
+.card-container {
+  background-color: white;
+  width: 450px;
+  height: 500px;
+  border-radius: 5%;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10%;
+}
+
+.img-profile {
+  border-radius: 50%;
+  border: solid 3px white;
+  top: 80px;
+  position: relative;
+  width: 120px;
+}
+
+.card-header {
+  background-image: url(./images/bg-pattern-card.svg);
+  padding: 5% 0;
+}
+
+.card-body {
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.body-1 {
+  font-weight: 700;
+}
+
+.body-2 {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.body-3 {
+  color: hsl(227, 10%, 46%);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.bg-main-top {
+  position: fixed;
+  width: 70%;
+  right: 55%;
+  bottom: 20%;
+  z-index: -1;
+}
+
+.bg-main-bottom {
+  position: fixed;
+  width: 70%;
+  left: 55%;
+  top: 30%;
+  z-index: -1;
+}
+
+.attribution {
+  color: white;
+}
+
+@media (max-width: 375px) {
+  .card-container {
+    width: 350px;
+    height: 500px;
+  }
+
+  .bg-main-top {
+    top: -15%;
+    width: 150%;
+  }
+
+  .bg-main-bottom {
+    top: 50%;
+    width: 150%;
+  }
+}
